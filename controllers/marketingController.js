@@ -1,5 +1,8 @@
 const marketingData = require("../models/marketingModel");
-const getAllData = async (req, res) => {};
+const getAllData = async (req, res) => {
+  const result = await marketingData.find();
+  res.send(result);
+};
 const getSingleData = async (req, res) => {};
 const createAData = async (req, res) => {
   const data = req.body;
