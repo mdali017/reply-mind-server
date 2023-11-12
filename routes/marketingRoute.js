@@ -15,4 +15,11 @@ marketingRoute.post("/", createAData);
 marketingRoute.patch("/:id", updateAData);
 marketingRoute.delete("/:id", deleteAData);
 
+marketingRoute.get("/test", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Making Route is working fine",
+  });
+});
+
 module.exports = marketingRoute;

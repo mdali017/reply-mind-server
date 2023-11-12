@@ -1,5 +1,6 @@
 // const connectDatabase = require("../config/db");
 // const { serverPort } = require("../secret");
+const connectDatabase = require("./config/db");
 const { serverPort } = require("./secret");
 const app = require("./src/app");
 
